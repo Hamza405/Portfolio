@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import SideBar from "./SideBar";
 
 const NavBar: FC = () => {
     return (
@@ -28,9 +29,7 @@ const NavBar: FC = () => {
                     <AiOutlineMenu size={ 25 } />
                 </div>
             </div>
-            <div className="fixed top-0 left-0 w-full h-screen bg-black/50">
-                <div className="fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10"></div>
-            </div>
+            <SideBar />
         </div> );
 };
 
