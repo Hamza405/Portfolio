@@ -4,7 +4,7 @@ import { AiOutlineClose, AiFillLinkedin, AiFillGithub, AiFillMail } from "react-
 
 const SideBar: FC<{ isOpen: boolean, onClose: () => void; }> = ( { isOpen, onClose } ) => {
     return (
-        <div className={ isOpen ? "fixed top-0 left-0 w-full h-screen bg-black/50" : '' }>
+        <div className={ isOpen ? "md:hidden fixed top-0 left-0 w-full h-screen bg-black/50" : '' }>
             <div className={ isOpen ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" : 'fixed top-0 p-10 left-[-100%] ease-in duration-500' }>
                 <div className="flex w-full justify-between items-center">
                     <h2 className="text-green-800">Hamza</h2>
