@@ -34,13 +34,13 @@ const SideBar: FC<{ isOpen: boolean, onClose: () => void; }> = ( { isOpen, onClo
                 <div className="pt-10 px-1">
                     <p className="uppercase">Let's connect</p>
                     <div className="py-6 flex justify-start items-center w-full md:w-[80%]">
-                        <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-2 ">
+                        <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 ">
                             <AiFillLinkedin size={ 25 } />
                         </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-2 mx-8">
+                        <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 mx-8">
                             <AiFillGithub size={ 25 } />
                         </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-2 ">
+                        <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 ">
                             <AiFillMail size={ 25 } />
                         </div>
                     </div>
