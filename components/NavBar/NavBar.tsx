@@ -1,9 +1,16 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SideBar from "./SideBar";
 
 const NavBar: FC = () => {
+    const [ sideBar, setSideBar ] = useState( false );
+    const openSideBarHandler = () => {
+        setSideBar( true );
+    };
+    const closeSideBarHandler = () => {
+        setSideBar( false );
+    };
     return (
         <div className="fixed shadow-xl w-full h-20 z-[100]" >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -25,11 +32,11 @@ const NavBar: FC = () => {
                         <li className="ml-10 text-sm uppercase hover:border-b">contact</li>
                     </Link>
                 </ul>
-                <div className="md:hidden">
+                <div className="md:hidden" onClick={ openSideBarHandler }>
                     <AiOutlineMenu size={ 25 } />
                 </div>
             </div>
-            <SideBar />
+            <SideBar isOpen={ sideBar } onClose={ closeSideBarHandler } />
         </div> );
 };
 
