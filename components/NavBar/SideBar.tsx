@@ -1,8 +1,32 @@
 import { FC } from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import { AiOutlineClose, AiFillLinkedin, AiFillGithub, AiFillMail, AiFillMessage } from "react-icons/ai";
 
 const SideBar: FC<{ isOpen: boolean, onClose: () => void; }> = ( { isOpen, onClose } ) => {
+    const router = useRouter();
+    const menu = [
+        {
+            name: 'home',
+            onClick: () => {
+                onClose();
+                router.push( '/' );
+            }
+        },
+        {
+            name: 'about',
+            onClick: () => {
+                onClose();
+                router.push( '/about' );
+            }
+        },
+        {
+            name: 'projects',
+            onClick: () => {
+                onClose();
+                router.push( '/projects' );
+            }
+        }
+    ];
     return (
         <div className={ isOpen ? "md:hidden fixed top-0 left-0 w-full h-screen bg-black/50" : '' }>
             <div className={ isOpen ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" : 'fixed top-0 p-10 left-[-100%] ease-in duration-500' }>
@@ -14,21 +38,7 @@ const SideBar: FC<{ isOpen: boolean, onClose: () => void; }> = ( { isOpen, onClo
                 </div>
                 <div className="py-10 px-1 flex flex-col">
                     <ul className="uppercase">
-                        <Link href="/">
-                            <li className="py-4">Home</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4">About</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4">Skills</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4">Projects</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4">Contact</li>
-                        </Link>
+                        { menu.map( item => <li key={ item.name } onClick={ item.onClick } className="py-4">{ item.name }</li> ) }
                     </ul>
                 </div>
                 <div className="pt-10 px-1">
