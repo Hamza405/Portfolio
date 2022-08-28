@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from 'next/image';
+import Skills from "./Skills";
 
 const About: FC = () => {
     return (
@@ -9,6 +10,7 @@ const About: FC = () => {
                     <p className="text-5xl text-green-800">About me</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquid voluptas, similique aliquam accusamus, ut quidem soluta animi tempore libero error porro earum sequi provident sunt. Ipsam obcaecati nisi aut!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquid voluptas, similique aliquam accusamus, ut quidem soluta animi tempore libero error porro earum sequi provident sunt. Ipsam obcaecati nisi aut!</p>
+                    <Skills />
                 </div>
                 <div className="col-span-1">
                     <div className="rounded-xl shadow-lg shadow-gray-400 p-2 bg-gray-500">
