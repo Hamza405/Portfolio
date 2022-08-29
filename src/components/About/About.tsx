@@ -4,7 +4,7 @@ import Skills from "./Skills";
 
 const About: FC = () => {
     return (
-        <div className="flex w-full md:h-screen flex-wrap justify-between items-center p-4 mx-auto my-12 sm:my-14">
+        <div id='about' className="flex w-full md:h-screen flex-wrap justify-between items-center p-4 mx-auto my-12 sm:my-14">
             <div className="py-4 max-w-[85%] m-auto md:grid grid-cols-3 gap-8">
 
                 <div className="col-span-2">

@@ -9,7 +9,8 @@ type Item = {
     projectId: number;
 };
 
-const ProjectItem: FC<Item> = ( props ) => {
+// const ProjectItem: FC<Item> = ( props ) => {
+const ProjectItem = () => {
     return (
         <div
             className="relative

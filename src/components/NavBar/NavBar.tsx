@@ -1,10 +1,24 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
 import SideBar from "./SideBar";
 
 const NavBar: FC = () => {
     const [ sideBar, setSideBar ] = useState( false );
+    const [ shadow, setShadow ] = useState( false );
+
+    const handleShadow = () => {
+        if( window.scrollY > 90 ) {
+            setShadow( true );
+        } else {
+            setShadow( false );
+        }
+    };
+
+    useEffect( () => {
+        window.addEventListener( 'scroll', handleShadow );
+    }, [] );
+
     const openSideBarHandler = () => {
         setSideBar( true );
     };
@@ -12,8 +26,8 @@ const NavBar: FC = () => {
         setSideBar( false );
     };
     return (
-        <div className="z-50 shadow-xl w-full h-20" >
-            <div className="flex justify-between items-center w-full h-full px-12 2xl: px - 16" style={ { zIndex: 50 } }>
+        <div className={ shadow ? "sticky top-0 left-0 bg-[#ecf0f3] shadow-xl w-full h-20 z-[100]" : "sticky top-0 left-0 bg-[#ecf0f3] w-full h-20 z-[100]" }>
+            < div className="flex justify-between items-center w-full h-full px-12 2xl:px-16" >
                 < h2 className="text-green-800" > Hamza</h2 >
                 <ul className="hidden md:flex">
                     <Link href='/'>

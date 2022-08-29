@@ -4,7 +4,7 @@ import PersonalIdentification from "./PersonalIdentification";
 
 const Main: FC = () => {
     return (
-        <div className="w-full h-screen text-center">
+        <div id='main' className="w-full h-screen text-center">
             <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex my-8 sm:justify-center items-center">
                 <div>
                     <PersonalIdentification />
