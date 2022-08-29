@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Head from "next/head";
 import NavBar from "../../components/NavBar/NavBar";
-import Projects from "@/components/Projects/Projects";
+import Projects from "../../components/Projects/Projects";
 
 const ProjectsPage: FC = () => {
     return <div>
