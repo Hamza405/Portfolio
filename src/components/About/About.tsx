@@ -14,7 +14,7 @@ const About: FC = () => {
                     <Skills />
 
                 </div>
-                <div className="col-span-1 flex items-start pt-2 sm:pt-10">
+                <div className="col-span-1 flex justify-center items-start pt-2 sm:pt-10">
                     <div className="rounded-xl shadow-lg shadow-gray-400 p-2 bg-gray-500 max-w-[350px]">
                         <Image
                             className="rounded-xl m-auto"
