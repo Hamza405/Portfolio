@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 type Item = {
     image: string,
@@ -8,28 +10,41 @@ type Item = {
     stack: string,
     projectId: number;
 };
-
+const fadeImages = [
+    {
+        url: '/assets/images/cv_photo.jpg',
+        caption: 'Slide 1'
+    },
+    {
+        url: '/assets/images/cv_photo.jpg',
+        caption: 'Slide 2'
+    },
+    {
+        url: '/assets/images/cv_photo.jpg',
+        caption: 'Slide 3'
+    },
+];
 // const ProjectItem: FC<Item> = ( props ) => {
 const ProjectItem = () => {
     return (
-        <div
-            className="relative
-            flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 
-            rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]"
-        >
-            <Image
-                className="rounded-xl m-auto group-hover:opacity-10"
-                src="/assets/images/cv_photo.jpg"
-                alt="Pictureof the author"
-                width={ 300 }
-                height={ 300 }
-            />
-            <div className="hidden group-hover:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <h3 className="text-2xl tracking-wide text-white text-center">Projects Title</h3>
-                <p className="pt-2 pb-4 text-center text-white">Technologies</p>
-                <Link href="/projects">
-                    <p className="text-center text-lg font-bold cursor-pointer bg-white rounded-xl py-3 text-gray-700">More Info</p>
-                </Link>
+        <div className="h-auto w-[500px]">
+
+
+            <div className="shadow-xl shadow-gray-600
+            rounded-xl">
+                <div className="slide-container w-full mx-auto">
+                    <Slide>
+                        { fadeImages.map( ( fadeImage, index ) => (
+                            <div className="each-fade" key={ index }>
+                                <div className="image-container">
+                                    <img className="rounded-md" src={ fadeImage.url } />
+                                </div>
+                            </div>
+                        ) ) }
+                    </Slide>
+                    <h3 className="p-4">Qlevar</h3>
+                    <p className="p-4 text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque in ducimus nam molestiae consequatur voluptate sunt, perferendis vitae facilis expedita, ipsam magnam odio suscipit, illum dicta esse mollitia aliquid placeat.</p>
+                </div>
             </div>
         </div>
     );
