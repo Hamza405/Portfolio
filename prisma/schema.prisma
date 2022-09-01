@@ -11,15 +11,22 @@ datasource db {
 }
 
 model Skill {
-  id String @id @default(cuid())
+  id Int @id @default(autoincrement())
   skillName String
   image String
-  basic Boolean
+  basic Boolean @default(true)
 }
 
 model Project {
-  id String @id @default(cuid())
+  id Int @id @default(autoincrement())
   projectName String
   projectDescription String
-  projectImages String[]
+  projectLink String @default("")
+  projectCodeLink String @default("")
+  image1 String
+  image2 String @default("")
+  image3 String @default("")
+  image4 String @default("")
+  image5 String @default("")
 }
+
