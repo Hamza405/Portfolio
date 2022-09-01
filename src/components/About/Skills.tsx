@@ -8,7 +8,7 @@ const Skills: FC<{ skills: Skill[] }> = ({ skills }) => {
       <p className="text-4xl text-green-800">My Skills</p>
       <div className="flex flex-wrap justify-start gap-4 md:gap-8 items-center my-4">
         {skills.map((item) => (
-          <SkillContainer image={item.image} />
+          <SkillContainer key={item.id} image={item.image} />
         ))}
 
         {/* <SkillContainer image="/assets/skills/html.png" />
