@@ -1,6 +1,4 @@
 import { FC } from "react";
-import Head from "next/head";
-import NavBar from "../../components/NavBar/NavBar";
 import Projects from "../../components/Projects/Projects";
 import { PrismaClient, Project } from "@prisma/client";
 
@@ -15,15 +13,7 @@ export async function getServerSideProps() {
   };
 }
 const ProjectsPage: FC<{ projects: Project[] }> = ({ projects }) => {
-  return (
-    <div>
-      <Head>
-        <title>Hamza Al Sheikh, Front End Developer</title>
-      </Head>
-      <NavBar />
-      <Projects projects={projects} />
-    </div>
-  );
+  return <Projects projects={projects} />;
 };
 
 export default ProjectsPage;

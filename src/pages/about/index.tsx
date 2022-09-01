@@ -15,15 +15,7 @@ export async function getServerSideProps() {
 }
 
 const AboutPage: FC<{ skills: Skill[] }> = ({ skills }) => {
-  return (
-    <div>
-      <Head>
-        <title>Hamza Al Sheikh, Front End Developer</title>
-      </Head>
-      <NavBar />
-      <About skills={skills} />
-    </div>
-  );
+  return <About skills={skills} />;
 };
 
 export default AboutPage;
