@@ -1,7 +1,5 @@
 import { FC } from "react";
-import Head from "next/head";
 import About from "../../components/About/About";
-import NavBar from "../../components/NavBar/NavBar";
 import { PrismaClient, Skill } from "@prisma/client";
 
 const prisma = new PrismaClient();
