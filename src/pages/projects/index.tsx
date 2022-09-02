@@ -4,7 +4,7 @@ import { PrismaClient, Project } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const projects = await prisma.project.findMany();
   return {
     props: {

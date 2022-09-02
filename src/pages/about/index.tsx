@@ -3,7 +3,7 @@ import About from "../../components/About/About";
 import { PrismaClient, Skill } from "@prisma/client";
 
 const prisma = new PrismaClient();
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const skills = await prisma.skill.findMany();
   return {
     props: {
