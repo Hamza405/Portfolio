@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar/NavBar";
+import NavBar from "@/components/NavigationComponents/NavBar";
 import Seo from "@/components/Seo";
 import type { AppProps } from "next/app";
 import { Fragment } from "react";
