@@ -7,6 +7,7 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 import PersonalIdentification from "./PersonalIdentification";
+import SocialContainer from "./SocialContainer";
 
 const Main: FC = () => {
   return (
@@ -20,34 +21,34 @@ const Main: FC = () => {
             </a>
           </button>
           <div className="py-4 flex justify-around m-auto items-center max-w-[70%] sm:max-w-[60%]">
-            <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 sm:p-6 p-3 ">
+            <SocialContainer>
               <a
                 href="https://www.linkedin.com/in/hamza-al-sheikh"
                 target="_blank"
               >
                 <AiFillLinkedin size={25} />
               </a>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 sm:p-6 p-3">
+            </SocialContainer>
+            <SocialContainer>
               <a href="https://github.com/Hamza405" target="_blank">
                 <AiFillGithub size={25} />
               </a>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300  sm:p-6 p-3 ">
+            </SocialContainer>
+            <SocialContainer>
               <a href="mailto: hamzash863@gmail.com" target="_blank">
                 <AiFillMail size={25} />
               </a>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300  sm:p-6 p-3 ">
+            </SocialContainer>
+            <SocialContainer>
               <a href="https://telegram.me/Hamza_Al_Sheikh" target="_blank">
                 <AiFillMessage size={25} />
               </a>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300  sm:p-6 p-3 ">
+            </SocialContainer>
+            <SocialContainer>
               <a href="https://wa.me/+963932012299" target="_blank">
                 <AiOutlineWhatsApp size={25} />
               </a>
-            </div>
+            </SocialContainer>
           </div>
         </div>
       </div>
