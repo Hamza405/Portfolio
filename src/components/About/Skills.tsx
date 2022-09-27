@@ -12,9 +12,57 @@ const Skills: FC<{ skills: Skill[] }> = ({ skills }) => {
         {mainSkills.map((item) => (
           <SkillContainer key={item.id} image={item.image} />
         ))}
+        {mainSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {mainSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {mainSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {mainSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
       </div>
-      <p className="text-4xl text-green-800 my-4">Familiar With</p>
+      <p className="text-4xl text-green-800 my-6">Familiar With</p>
       <div className="flex flex-wrap justify-start gap-4 md:gap-6 items-center my-4">
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
+        {sideSkills.map((item) => (
+          <SkillContainer key={item.id} image={item.image} />
+        ))}
         {sideSkills.map((item) => (
           <SkillContainer key={item.id} image={item.image} />
         ))}

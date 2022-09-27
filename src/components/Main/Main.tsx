@@ -16,7 +16,11 @@ const Main: FC = () => {
         <div>
           <PersonalIdentification />
           <button className="py-4 px-8 my-4 hover:scale-105 ease-in duration-300">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              href="/assets/Hamza_Al_Sheikh_ Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               My Resume
             </a>
           </button>
