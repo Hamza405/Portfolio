@@ -15,7 +15,7 @@ const Main: FC = () => {
       <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex my-8 sm:justify-center items-center">
         <div>
           <PersonalIdentification />
-          <div className="m-auto w-48 cursor-pointer hover:animate-bounce ease-in duration-300">
+          <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
             <a
               href="/assets/Hamza_Al_Sheikh_ Resume.pdf"
               target="_blank"

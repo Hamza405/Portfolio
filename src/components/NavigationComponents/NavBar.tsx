@@ -34,7 +34,12 @@ const NavBar: FC = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-12 2xl:px-16">
-        <h2 className="text-green-800"> Hamza</h2>
+        <a href="#">
+          <img
+            className="h-40 w-44 sm:h-50 sm:w-52 md:h-52 md:w-56"
+            src="/assets/logo.svg"
+          />
+        </a>
         <ul className="hidden md:flex">
           <Link href="/">
             <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
