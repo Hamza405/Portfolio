@@ -11,17 +11,24 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
     >
       <div className="py-4 max-w-[85%] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="text-4xl text-green-800 my-4">About me</p>
+          <p className="text-4xl text-blue-800 my-4">About me</p>
           <p className="text-lg">
             I'm hamza al sheikh, Have a bachelor degree in computer engineering
             with more than one year exp in front end development.
             <br /> I started to code in college years, I learned many computer
             techniques and many programming languages ​​and dealing with
             databases.
-            <br /> I work as freelance developer on mostaql and looking for
-            opportunities to demonstrate my skills with an expert team of
-            developers who will help advance my career progression to senior
-            positions in the future.
+            <br /> I work as freelance developer on{" "}
+            <a
+              className="text-blue-800 text-xl"
+              href="https://mostaql.com/u/hamza_alsheikh"
+              target="_blank"
+            >
+              Mostaql
+            </a>{" "}
+            and looking for opportunities to demonstrate my skills with an
+            expert team of developers who will help advance my career
+            progression to senior positions in the future.
           </p>
           <Skills skills={skills} />
         </div>
