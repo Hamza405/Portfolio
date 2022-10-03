@@ -42,13 +42,19 @@ const NavBar: FC = () => {
         </a>
         <ul className="hidden md:flex">
           <Link href="/">
-            <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+            <div className="ml-5 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] hover:text-white py-2 px-4 rounded-xl hover:animate-pulse">
+              <li className="m-auto text-md lg:text-xl uppercase">Home</li>
+            </div>
           </Link>
           <Link href="/#about">
-            <li className="ml-10 text-sm uppercase hover:border-b">ABout</li>
+            <div className="ml-5 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] hover:text-white py-2 px-4 rounded-xl hover:animate-pulse">
+              <li className="m-auto text-md lg:text-xl uppercase">About</li>
+            </div>
           </Link>
           <Link href="/#projects">
-            <li className="ml-10 text-sm uppercase hover:border-b">projects</li>
+            <div className="ml-5 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] hover:text-white py-2 px-4 rounded-xl hover:animate-pulse">
+              <li className="m-auto text-md lg:text-xl uppercase">Projects</li>
+            </div>
           </Link>
         </ul>
         <div className="md:hidden" onClick={openSideBarHandler}>
