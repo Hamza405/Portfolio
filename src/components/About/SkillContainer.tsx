@@ -9,7 +9,7 @@ const SkillContainer: FC<{ image: string; text: string }> = ({
   return (
     <div className="relative flex flex-col">
       {show && (
-        <div className="absolute bottom-16 left-0 opacity-75  bg-gray-600 text-white p-2 rounded-[4px] flex items-center justify-center uppercase text-sm">
+        <div className="absolute bottom-16 left-0 opacity-75  bg-gray-600 text-white p-2 rounded-[4px] flex items-center justify-center uppercase text-sm animate-fade">
           {text}
           <span
             style={{
