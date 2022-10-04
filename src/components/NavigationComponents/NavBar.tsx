@@ -33,7 +33,7 @@ const NavBar: FC = () => {
           : "sticky top-0 left-0 bg-[#ecf0f3] w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-12 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-8 sm:px-12 2xl:px-16">
         <a href="#">
           <img
             className="h-40 w-44 sm:h-50 sm:w-52 md:h-52 md:w-56"
