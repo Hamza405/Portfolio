@@ -54,7 +54,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
               />
             </div>
           </div>
-          <button className="px-2 py-1 text-sm mt-2 mr-4 sm:px-4 sm:py-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white">
+          <button className="px-2 py-1 text-sm mt-2 mr-4 sm:px-4 sm:py-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white hover:scale-110 ease-in duration-300">
             View Code
           </button>
         </div>
