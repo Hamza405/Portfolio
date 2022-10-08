@@ -44,12 +44,12 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
       <div
         className={
           isOpen
-            ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-            : "fixed top-0 p-10 left-[-100%] ease-in duration-500"
+            ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-4 sm:p-10 ease-in duration-500"
+            : "fixed top-0 p-4 sm:p-10 left-[-100%] ease-in duration-500"
         }
       >
         <div className="flex w-full justify-between items-center">
-          <h2 className="text-green-800">Hamza</h2>
+          <img className="h-32 w-36" src="/assets/logo.svg" />
           <div
             className="shadow-lg rounded-full p-2 shadow-gray-400 cursor-pointer"
             onClick={onClose}

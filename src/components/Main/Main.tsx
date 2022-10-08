@@ -15,11 +15,15 @@ const Main: FC = () => {
       <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex my-8 sm:justify-center items-center">
         <div>
           <PersonalIdentification />
-          <button className="py-4 px-8 my-4 hover:scale-105 ease-in duration-300">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              My Resume
+          <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
+            <a
+              href="/assets/Hamza_Al_Sheikh_ Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="py-4 px-8 my-4 ">My Resume</button>
             </a>
-          </button>
+          </div>
           <div className="py-4 flex justify-around m-auto items-center max-w-[70%] sm:max-w-[60%]">
             <SocialContainer>
               <a
