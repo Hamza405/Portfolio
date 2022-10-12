@@ -37,7 +37,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
             <Image
               className="rounded-xl m-auto"
               src="/assets/images/cv_photo.jpg"
-              alt="Pictureof the author"
+              alt="Hamza Al Sheikh"
               width={300}
               height={300}
             />
