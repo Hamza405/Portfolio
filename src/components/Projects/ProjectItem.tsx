@@ -42,16 +42,29 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
           ))}
         </Slide>
         <div className="flex justify-between items-center">
-          <a
-            href={project.projectLink}
-            target="_blank"
-            aria-label={project.projectName}
-            className={
-              project.projectLink
-                ? "cursor-pointer"
-                : "cursor-default pointer-events-none"
-            }
-          >
+          {project.projectLink ? (
+            <a
+              href={project.projectLink}
+              target="_blank"
+              aria-label={project.projectName}
+            >
+              <div
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+                className="flex items-center p-4 text-blue-600"
+              >
+                <h3>{project.projectName}</h3>
+                {project.projectLink && (
+                  <div className="pt-2 pl-2">
+                    <MdOutlineNavigateNext
+                      size={25}
+                      className={hover ? "animate-ping" : ""}
+                    />
+                  </div>
+                )}
+              </div>
+            </a>
+          ) : (
             <div
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
@@ -67,7 +80,8 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
                 </div>
               )}
             </div>
-          </a>
+          )}
+
           {project.projectCodeLink && (
             <a
               href={project.projectCodeLink}
