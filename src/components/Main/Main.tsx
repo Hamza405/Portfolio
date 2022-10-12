@@ -11,14 +11,15 @@ import SocialContainer from "./SocialContainer";
 
 const Main: FC = () => {
   return (
-    <div id="main" className="w-full h-screen text-center">
+    <main id="main" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex my-8 sm:justify-center items-center">
         <div>
           <PersonalIdentification />
           <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
             <a
-              href="/assets/Hamza_Al_Sheikh_ Resume.pdf"
+              href="/assets/resume.pdf"
               target="_blank"
+              aria-label="Hamza Al Sheikh Resume"
               rel="noopener noreferrer"
             >
               <button className="py-4 px-8 my-4 ">My Resume</button>
@@ -28,35 +29,52 @@ const Main: FC = () => {
             <SocialContainer>
               <a
                 href="https://www.linkedin.com/in/hamza-al-sheikh"
+                aria-label="Hamza Al Sheikh linkedin account"
                 target="_blank"
               >
                 <AiFillLinkedin size={25} />
               </a>
             </SocialContainer>
             <SocialContainer>
-              <a href="https://github.com/Hamza405" target="_blank">
+              <a
+                href="https://github.com/Hamza405"
+                aria-label="Hamza Al Sheikh github account"
+                target="_blank"
+              >
                 <AiFillGithub size={25} />
               </a>
             </SocialContainer>
             <SocialContainer>
-              <a href="mailto: hamzash863@gmail.com" target="_blank">
+              <a
+                href="mailto: hamzash863@gmail.com"
+                aria-label="Hamza Al Sheikh email"
+                target="_blank"
+              >
                 <AiFillMail size={25} />
               </a>
             </SocialContainer>
             <SocialContainer>
-              <a href="https://telegram.me/Hamza_Al_Sheikh" target="_blank">
+              <a
+                href="https://telegram.me/Hamza_Al_Sheikh"
+                aria-label="Hamza Al Sheikh telegram"
+                target="_blank"
+              >
                 <AiFillMessage size={25} />
               </a>
             </SocialContainer>
             <SocialContainer>
-              <a href="https://wa.me/+963932012299" target="_blank">
+              <a
+                href="https://wa.me/+963932012299"
+                aria-label="Hamza Al Sheikh whatsapp"
+                target="_blank"
+              >
                 <AiOutlineWhatsApp size={25} />
               </a>
             </SocialContainer>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 export default Main;

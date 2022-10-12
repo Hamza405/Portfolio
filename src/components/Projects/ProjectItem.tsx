@@ -35,6 +35,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
                   style={{ objectFit: "contain", height: "auto" }}
                   className="rounded-md"
                   src={fadeImage}
+                  alt={`hamza ${project.id} project`}
                 />
               </div>
             </div>
@@ -44,6 +45,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
           <a
             href={project.projectLink}
             target="_blank"
+            aria-label={project.projectName}
             className={
               project.projectLink
                 ? "cursor-pointer"
@@ -70,6 +72,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
             <a
               href={project.projectCodeLink}
               target="_blank"
+              aria-label={`${project.projectName} repo`}
               className="px-2 py-1 text-sm mt-2 mr-4 sm:px-4 sm:py-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white hover:scale-110 ease-in duration-300 cursor-pointer"
             >
               Code

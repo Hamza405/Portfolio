@@ -25,7 +25,7 @@ const SkillContainer: FC<{ image: string; text: string }> = ({
         onMouseLeave={() => setShow(false)}
         className=" rounded-xl shadow-lg shadow-gray-400  hover:scale-110 ease-in duration-300 p-4 flex items-center"
       >
-        <Image src={image} width={40} height={40} />
+        <Image src={image} alt={text} width={40} height={40} />
       </div>
     </div>
   );

@@ -38,6 +38,7 @@ const NavBar: FC = () => {
           <img
             className="h-40 w-44 sm:h-50 sm:w-52 md:h-52 md:w-56"
             src="/assets/logo.svg"
+            alt="Hamza Al Sheikh"
           />
         </a>
         <ul className="hidden md:flex">

@@ -9,8 +9,10 @@ const Seo: FC = () => {
   return (
     <Head>
       <title>{siteName}</title>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="robots" content="follow, index" />
       <meta content={description} name="description" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:description" content={description} />

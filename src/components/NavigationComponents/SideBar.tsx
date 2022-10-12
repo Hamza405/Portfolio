@@ -49,7 +49,11 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
         }
       >
         <div className="flex w-full justify-between items-center">
-          <img className="h-32 w-36" src="/assets/logo.svg" />
+          <img
+            className="h-32 w-36"
+            src="/assets/logo.svg"
+            alt="Hamza Al Sheikh"
+          />
           <div
             className="shadow-lg rounded-full p-2 shadow-gray-400 cursor-pointer"
             onClick={onClose}
@@ -70,17 +74,29 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
           <p className="uppercase">Let's connect</p>
           <div className="py-4 flex justify-around m-auto items-center md:w-[80%]">
             <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 ">
-              <a href="mailto: hamzash863@gmail.com" target="_blank">
+              <a
+                href="mailto: hamzash863@gmail.com"
+                aria-label="Hamza Al Sheikh email"
+                target="_blank"
+              >
                 <AiFillMail size={25} />
               </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 ">
-              <a href="https://telegram.me/Hamza_Al_Sheikh" target="_blank">
+              <a
+                href="https://telegram.me/Hamza_Al_Sheikh"
+                aria-label="Hamza Al Sheikh telegram"
+                target="_blank"
+              >
                 <AiFillMessage size={25} />
               </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 ">
-              <a href="https://wa.me/+963932012299" target="_blank">
+              <a
+                href="https://wa.me/+963932012299"
+                aria-label="Hamza Al Sheikh whatsapp"
+                target="_blank"
+              >
                 <AiOutlineWhatsApp size={25} />
               </a>
             </div>
