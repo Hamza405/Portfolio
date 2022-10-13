@@ -17,6 +17,7 @@ const Seo: FC = () => {
       <meta property="og:site_name" content={siteName} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={siteName} />
+      <meta property="og:url" content="https://hamzaalsheikh.vercel.app" />
     </Head>
   );
 };
