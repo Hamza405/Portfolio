@@ -1,5 +1,6 @@
-import { FC } from "react";
+import { FC, useRef } from "react";
 import { useRouter } from "next/router";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 import {
   AiOutlineClose,
   AiFillMail,
@@ -12,6 +13,7 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
   onClose,
 }) => {
   const router = useRouter();
+  const sideBarWrapper = useRef() as React.MutableRefObject<HTMLInputElement>;
   const menu = [
     {
       name: "home",
@@ -35,6 +37,9 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
       },
     },
   ];
+
+  useOnClickOutside(sideBarWrapper, onClose);
+
   return (
     <div
       className={
@@ -42,6 +47,7 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
       }
     >
       <div
+        ref={sideBarWrapper}
         className={
           isOpen
             ? "fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-4 sm:p-10 ease-in duration-500"
@@ -70,8 +76,7 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
             ))}
           </ul>
         </div>
-        <div className="pt-10 px-1">
-          <p className="uppercase">Let's connect</p>
+        <div className="pt-10 px-1 border-t border-gray-300">
           <div className="py-4 flex justify-around m-auto items-center md:w-[80%]">
             <div className="rounded-full shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300 p-2 ">
               <a
