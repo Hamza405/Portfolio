@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { FC } from "react";
 import Image from "next/image";
 import Skills from "./Skills";
 import { Skill } from "@prisma/client";
@@ -7,7 +7,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
   return (
     <div
       id="about"
-      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-12 sm:my-14"
+      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8"
     >
       <div className="py-4 max-w-[85%] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-1 flex justify-center items-start pt-2 sm:pt-10 md:hidden">
@@ -44,7 +44,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
           <Skills skills={skills} />
         </div>
 
-        <div className="col-span-1 md:flex justify-center items-start pt-2 hidden ">
+        <div className="col-span-1 md:flex justify-center items-start pt-12 hidden ">
           <div className="rounded-xl shadow-lg shadow-gray-400 p-2 bg-gray-500 max-w-[350px]">
             <Image
               className="rounded-xl m-auto"
