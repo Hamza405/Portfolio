@@ -11,8 +11,8 @@ import SocialContainer from "./SocialContainer";
 
 const Main: FC = () => {
   return (
-    <main id="main" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex my-8 sm:justify-center items-center">
+    <main id="main" className="w-full my-14 md:my-20 lg:my-24 text-center">
+      <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex sm:justify-center items-center">
         <div>
           <PersonalIdentification />
           <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
