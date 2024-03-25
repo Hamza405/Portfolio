@@ -23,7 +23,19 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
         </div>
         <div className="col-span-2">
           <p className="text-4xl text-blue-800 my-4">About me</p>
-          <p className="text-lg">
+          <p>
+            My name is Hamza Al-Sheikh, and I hold a bachelor's degree in
+            computer engineering with over three years of experience in software
+            development.
+            <br />I started coding when I was 17 years old and during college, I
+            learned various computer techniques, programming languages, and how
+            to manage databases.
+            <br />
+            Currently, I'm looking for opportunities to showcase my skills while
+            working with an expert team of developers. My ultimate goal is to
+            advance my career to senior positions in the future.
+          </p>
+          {/* <p className="text-lg">
             I'm hamza al sheikh, Have a bachelor degree in computer engineering
             with more than one year exp in front end development.
             <br /> I started to code in college years, I learned many computer
@@ -40,7 +52,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
             and looking for opportunities to demonstrate my skills with an
             expert team of developers who will help advance my career
             progression to senior positions in the future.
-          </p>
+          </p> */}
           <Skills skills={skills} />
         </div>
 
