@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,22 +8,22 @@ datasource db {
 }
 
 model Skill {
-  id Int @id @default(autoincrement())
+  id        Int     @id @default(autoincrement())
   skillName String
-  image String
-  basic Boolean @default(true)
+  image     String
+  basic     Boolean @default(true)
+  order     Int  @default(0)
 }
 
 model Project {
-  id Int @id @default(autoincrement())
-  projectName String
+  id                 Int    @id @default(autoincrement())
+  projectName        String
   projectDescription String
-  projectLink String @default("")
-  projectCodeLink String @default("")
-  image1 String
-  image2 String @default("")
-  image3 String @default("")
-  image4 String @default("")
-  image5 String @default("")
+  projectLink        String @default("")
+  projectCodeLink    String @default("")
+  image1             String
+  image2             String @default("")
+  image3             String @default("")
+  image4             String @default("")
+  image5             String @default("")
 }
-

@@ -3,8 +3,12 @@ import SkillContainer from "./SkillContainer";
 import { Skill } from "@prisma/client";
 
 const Skills: FC<{ skills: Skill[] }> = ({ skills }) => {
-  const mainSkills = skills.filter((i) => i.basic);
-  const sideSkills = skills.filter((i) => !i.basic);
+  const mainSkills = skills
+    .filter((i) => i.basic)
+    .sort(({ order: a }, { order: b }) => a - b);
+  const sideSkills = skills
+    .filter((i) => !i.basic)
+    .sort(({ order: a }, { order: b }) => a - b);
   return (
     <div className="w-full my-4">
       <p className="text-4xl text-blue-800">My Skills</p>
