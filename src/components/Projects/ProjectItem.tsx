@@ -2,7 +2,6 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { Project } from "@prisma/client";
 import { FC, useState } from "react";
-import Image from "next/image";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
 const ProjectItem: FC<{ project: Project }> = ({ project }) => {
