@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const siteName = "Hamza Al Sheikh's website";
 const description =
-  "Hamza Al Sheikh's website | Front End Developer | Mobile Applications Developer";
+  "Hamza Al Sheikh's website | Front End Developer | Mobile Applications Developer | Full Stack Developer | Software Engineer";
 
 const Seo: FC = () => {
   return (
@@ -17,6 +17,7 @@ const Seo: FC = () => {
       <meta property="og:site_name" content={siteName} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={siteName} />
+      <link rel="shortcut icon" href="/favicon.ico" />
       <meta property="og:url" content="https://hamzaalsheikh.vercel.app" />
     </Head>
   );
