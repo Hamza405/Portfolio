@@ -124,7 +124,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => {
             </a>
           )}
         </div>
-        <p className="p-4 text-md">{project.projectDescription}.</p>
+        <p className="p-4 text-md">{project.projectDescription}</p>
       </div>
     </div>
   );
