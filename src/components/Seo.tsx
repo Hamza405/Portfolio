@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const siteName = "Hamza Al Sheikh's website";
 const description =
-  "Hamza Al Sheikh's website | Front End Developer | Mobile Applications Developer";
+  "Hamza Al Sheikh's website | Front End Developer | Mobile Applications Developer | Full Stack Developer | Software Engineer";
 
 const Seo: FC = () => {
   return (
