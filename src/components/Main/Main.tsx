@@ -3,7 +3,6 @@ import {
   AiFillLinkedin,
   AiFillGithub,
   AiFillMail,
-  AiFillMessage,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 import PersonalIdentification from "./PersonalIdentification";
@@ -52,7 +51,7 @@ const Main: FC = () => {
               <AiFillMail size={25} />
             </a>
           </SocialContainer>
-          <SocialContainer>
+          {/* <SocialContainer>
             <a
               href="https://telegram.me/Hamza_Al_Sheikh"
               aria-label="Hamza Al Sheikh telegram"
@@ -60,10 +59,10 @@ const Main: FC = () => {
             >
               <AiFillMessage size={25} />
             </a>
-          </SocialContainer>
+          </SocialContainer> */}
           <SocialContainer>
             <a
-              href="https://wa.me/+963986268957"
+              href="https://wa.me/+971506733899"
               aria-label="Hamza Al Sheikh whatsapp"
               target="_blank"
             >
