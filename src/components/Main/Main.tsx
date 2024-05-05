@@ -3,7 +3,6 @@ import {
   AiFillLinkedin,
   AiFillGithub,
   AiFillMail,
-  AiFillMessage,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 import PersonalIdentification from "./PersonalIdentification";
