@@ -24,16 +24,27 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
         <div className="col-span-2">
           <p className="text-4xl text-blue-800 my-4">About me</p>
           <p>
-            My name is Hamza Al-Sheikh, and I hold a bachelor's degree in
-            computer engineering with over three years of experience in software
-            development.
-            <br />I started coding when I was 16 years old and during college, I
-            learned various computer techniques, programming languages, and how
-            to manage databases.
+            Hello! I'm Hamza Al Sheikh, a passionate Front-End Developer based
+            in Dubai, UAE. I have a bachelor's degree in Computer Engineering
+            from Tishreen University. I started coding at the age of 16, and it
+            has since become a thriving career for me. Over the past three
+            years, I've specialized in front-end development and have expanded
+            my expertise to full-stack development for over a year.
             <br />
-            Currently, I'm looking for opportunities to showcase my skills while
-            working with an expert team of developers. My ultimate goal is to
-            advance my career to senior positions in the future.
+            I've had the opportunity to work with companies in the UK, Turkey,
+            and Germany in remote roles. In these positions, I led projects and
+            mentored junior developers. My experiences range from developing
+            mobile apps with React-Native to optimizing web applications,
+            reducing load times, and enhancing user interfaces.
+            <br />I am proficient in a variety of technologies including HTML,
+            CSS, JavaScript, TypeScript, React.js, Redux, and SQL. Additionally,
+            I'm familiar with Next.js, Angular, Express.js, MongoDB, AWS, and
+            mobile development for Android and iOS. My approach combines
+            technical skills with a commitment to best practices and continuous
+            learning.
+            <br />
+            I'm always eager to grow professionally and take on new challenges
+            that push the boundaries of technology.
           </p>
           <Skills skills={skills} />
         </div>

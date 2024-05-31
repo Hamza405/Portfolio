@@ -8,7 +8,7 @@ const PersonalIdentification: FC = () => {
       </h1>
       <h2 className="py-2 text-gray-800">Software Engineer</h2>
       <p className="py-4 text-gray-600 text-md max-w-[70%] mx-auto">
-        three years of frontend and one year of full-stack development
+        over three years of frontend and one year of full-stack development
         experience
       </p>
     </>

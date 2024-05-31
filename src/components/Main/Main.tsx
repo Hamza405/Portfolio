@@ -13,7 +13,8 @@ const Main: FC = () => {
     <main id="main" className="w-full my-14 md:my-20 lg:my-24 text-center">
       <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex sm:justify-center items-center flex-col">
         <PersonalIdentification />
-        <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
+        {/* Resume Button */}
+        {/* <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
           <a
             href="/assets/Hamza_Al_Sheikh_Resume.pdf"
             target="_blank"
@@ -22,7 +23,7 @@ const Main: FC = () => {
           >
             <button className="py-4 px-8 my-4 ">My Resume</button>
           </a>
-        </div>
+        </div> */}
         <div className="py-4 w-full flex justify-around m-auto items-center max-w-[80%] sm:max-w-[60%]">
           <SocialContainer>
             <a
