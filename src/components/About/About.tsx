@@ -14,7 +14,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
           <div className="rounded-xl shadow-lg shadow-gray-400 p-2 bg-gray-500 max-w-[350px]">
             <Image
               className="rounded-xl m-auto"
-              src="/assets/images/cv_photo.jpg"
+              src="/assets/images/cv_photo.jpeg"
               alt="Hamza Al Sheikh"
               width={300}
               height={300}
@@ -53,7 +53,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
           <div className="rounded-xl shadow-lg shadow-gray-400 p-2 bg-gray-500 max-w-[350px]">
             <Image
               className="rounded-xl m-auto"
-              src="/assets/images/cv_photo.jpg"
+              src="/assets/images/cv_photo.jpeg"
               alt="Hamza Al Sheikh"
               width={300}
               height={300}
