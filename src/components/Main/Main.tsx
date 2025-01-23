@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiFillMail,
   AiOutlineWhatsApp,
+  AiOutlineMedium,
 } from "react-icons/ai";
 import PersonalIdentification from "./PersonalIdentification";
 import SocialContainer from "./SocialContainer";
@@ -14,7 +15,7 @@ const Main: FC = () => {
       <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex sm:justify-center items-center flex-col">
         <PersonalIdentification />
         {/* Resume Button */}
-        {/* <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300">
+        <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300 my-4">
           <a
             href="/assets/Hamza_Al_Sheikh_Resume.pdf"
             target="_blank"
@@ -23,7 +24,7 @@ const Main: FC = () => {
           >
             <button className="py-4 px-8 my-4 ">My Resume</button>
           </a>
-        </div> */}
+        </div>
         <div className="py-4 w-full flex justify-around m-auto items-center max-w-[80%] sm:max-w-[60%]">
           <SocialContainer>
             <a
@@ -52,15 +53,15 @@ const Main: FC = () => {
               <AiFillMail size={25} />
             </a>
           </SocialContainer>
-          {/* <SocialContainer>
+          <SocialContainer>
             <a
-              href="https://telegram.me/Hamza_Al_Sheikh"
-              aria-label="Hamza Al Sheikh telegram"
+              href="https://medium.com/@hamzash863"
+              aria-label="Hamza Al Sheikh Medium"
               target="_blank"
             >
-              <AiFillMessage size={25} />
+              <AiOutlineMedium size={25} />
             </a>
-          </SocialContainer> */}
+          </SocialContainer>
           <SocialContainer>
             <a
               href="https://wa.me/+971506733899"
