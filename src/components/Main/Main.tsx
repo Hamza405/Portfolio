@@ -17,7 +17,7 @@ const Main: FC = () => {
         {/* Resume Button */}
         <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300 my-4">
           <a
-            href="/assets/Hamza_Al_Sheikh_Resume.pdf"
+            href="/assets/Hamza_AlSheikh_Resume.pdf"
             target="_blank"
             aria-label="Hamza Al Sheikh Resume"
             rel="noopener noreferrer"
