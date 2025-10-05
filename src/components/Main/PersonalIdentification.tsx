@@ -7,10 +7,10 @@ const PersonalIdentification: FC = () => {
         Hello, I'm <span className="text-indigo-600">Hamza</span>
       </h1>
       <h2 className="py-2 text-gray-800">Software Engineer</h2>
-      <p className="py-4 text-gray-600 text-md max-w-[70%] mx-auto">
-        over four years of frontend and over one year of full-stack development
+      {/* <p className="py-4 text-gray-600 text-md max-w-[70%] mx-auto">
+        over four years of frontend and over two years of full-stack development
         experience
-      </p>
+      </p> */}
     </>
   );
 };

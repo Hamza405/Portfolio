@@ -24,27 +24,43 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
         <div className="col-span-2">
           <p className="text-4xl text-blue-800 my-4">About me</p>
           <p>
-            Hello! I'm Hamza Al Sheikh, a passionate Front-End Developer based
-            in Dubai, UAE. I have a bachelor's degree in Computer Engineering
-            from Tishreen University. I started coding at the age of 16, and it
-            has since become a thriving career for me. Over the past three
-            years, I've specialized in front-end development and have expanded
-            my expertise to full-stack development for over a year.
+            Hello! I'm Hamza Al Sheikh, a Software Engineer based in Dubai, UAE,
+            with a bachelor's degree in Computer Engineering from Tishreen
+            University. My journey into software development began at age 16,
+            and what started as a passion has evolved into a fulfilling career
+            building solutions that make a real impact.
             <br />
-            I've had the opportunity to work with companies in the UK, Turkey,
-            and Germany in remote roles. In these positions, I led projects and
-            mentored junior developers. My experiences range from developing
-            mobile apps with React-Native to optimizing web applications,
-            reducing load times, and enhancing user interfaces.
-            <br />I am proficient in a variety of technologies including HTML,
-            CSS, JavaScript, TypeScript, React.js, Redux, and SQL. Additionally,
-            I'm familiar with Next.js, Angular, Express.js, MongoDB, AWS, and
-            mobile development for Android and iOS. My approach combines
-            technical skills with a commitment to best practices and continuous
-            learning.
+            Over the past 4+ years, I've specialized in mobile development with
+            a strong focus on React Native and cross-platform applications. For
+            the last 2+ years, I've expanded into full-stack development,
+            working remotely with international companies across the UK, Turkey,
+            and Germany. This global experience has shaped my ability to
+            collaborate across time zones, cultures, and diverse technical
+            environments.
             <br />
-            I'm always eager to grow professionally and take on new challenges
-            that push the boundaries of technology.
+            Throughout my career, I've led challenging projects including
+            building offline-first architectures, implementing AES-256 cipher
+            encryption and key generation, developing custom native modules for
+            iOS and Android, and architecting serverless backends. Beyond
+            writing code, I'm passionate about helping others grow. I've
+            mentored junior developers through code reviews and task
+            assignments, helping them progress to mid-level roles. I believe
+            great software is built by great teams, and I enjoy contributing to
+            that growth.
+            <br />
+            My technical toolkit includes JavaScript, TypeScript, React Native,
+            Redux, Node.js, Express.js, SQL, SQLite, Flutter, Dart, and AWS
+            services. I also work with Next.js, Angular, MongoDB, and have
+            experience with native iOS and Android development. But beyond the
+            technologies themselves, I focus on thoughtful architecture, writing
+            clean and maintainable code, optimizing performance, and building
+            secure, scalable solutions. What drives me is solving complex
+            problems and creating applications that people rely on.
+            <br />
+            I'm always open to new opportunities and conversations about
+            technology or interesting projects. Whether it's a potential
+            collaboration, technical discussion, or just exchanging ideas, feel
+            free to reach out!
           </p>
           <Skills skills={skills} />
         </div>
