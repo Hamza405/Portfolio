@@ -30,13 +30,12 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
             and what started as a passion has evolved into a fulfilling career
             building solutions that make a real impact.
             <br />
-            Over the past 4+ years, I've specialized in mobile development with
+            Over the past +5 years, I've specialized in mobile development with
             a strong focus on React Native and cross-platform applications. For
-            the last 2+ years, I've expanded into full-stack development,
-            working remotely with international companies across the UK, Turkey,
-            and Germany. This global experience has shaped my ability to
-            collaborate across time zones, cultures, and diverse technical
-            environments.
+            the last 3 years, I've expanded into full-stack development, working
+            remotely with international companies across the UK, Turkey, and
+            Germany. This global experience has shaped my ability to collaborate
+            across time zones, cultures, and diverse technical environments.
             <br />
             Throughout my career, I've led challenging projects including
             building offline-first architectures, implementing AES-256 cipher
