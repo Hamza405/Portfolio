@@ -7,7 +7,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
   return (
     <div
       id="about"
-      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8"
+      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8 bg-white"
     >
       <div className="py-4 max-w-[85%] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-1 flex justify-center items-start pt-2 sm:pt-10 md:hidden mb-8">

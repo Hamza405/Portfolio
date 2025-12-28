@@ -28,7 +28,7 @@ const BlogCard = ({
   description: string;
   link: string;
 }) => (
-  <div className="border border-gray-200 rounded-lg p-5 text-left shadow-md transition-transform duration-200 bg-white flex flex-col hover:scale-105">
+  <div className="border border-gray-200 rounded-lg p-5 text-left shadow-md transition-transform duration-200 bg-[#ecf0f3] flex flex-col hover:scale-105">
     <h3 className="text-2xl font-bold mb-2">{title}</h3>
     <p className="text-gray-600 flex-grow mb-5">{description}</p>
     <a
@@ -44,20 +44,19 @@ const BlogCard = ({
 
 const Blog = () => {
   return (
-    <section
-      id="blog"
-      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8 max-w-[85%]"
-    >
-      <h2 className="mb-6 text-gradient">Technical Writing</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
-        {blogPosts.map((post) => (
-          <BlogCard
-            key={post.id}
-            title={post.title}
-            description={post.description}
-            link={post.link}
-          />
-        ))}
+    <section id="blog" className="bg-white py-8">
+      <div className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-2  max-w-[85%]">
+        <h2 className="mb-6 text-gradient">Technical Writing</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
+          {blogPosts.map((post) => (
+            <BlogCard
+              key={post.id}
+              title={post.title}
+              description={post.description}
+              link={post.link}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
