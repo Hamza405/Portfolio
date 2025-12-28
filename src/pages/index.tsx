@@ -3,6 +3,7 @@ import Main from "../components/Main/Main";
 import About from "@/components/About/About";
 import Projects from "@/components/Projects/Projects";
 import { PrismaClient, Skill, Project } from "@prisma/client";
+import Blog from "@/components/Blog/Blog";
 
 type Props = {
   skills: Skill[];
@@ -26,6 +27,7 @@ const Home: FC<Props> = ({ skills, projects }) => {
     <div className="container">
       <Main />
       <About skills={skills} />
+      <Blog />
       {/* <Projects projects={projects} /> */}
     </div>
   );

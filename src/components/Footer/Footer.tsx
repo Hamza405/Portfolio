@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-primary-gradient text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-8 justify-around">
+        <div className="flex flex-col md:flex-row gap-8 justify-around py-4">
           <div className="flex-1">
             <h3 className="text-2xl font-bold mb-2">Hamza AlSheikh</h3>
             <p className="text-gray-300">
@@ -63,9 +63,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className="text-center text-gray-400 mt-8">
-          <p>&copy; Hamza AlSheikh. All rights reserved.</p>
         </div>
       </div>
     </footer>
