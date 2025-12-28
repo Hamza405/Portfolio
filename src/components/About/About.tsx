@@ -7,10 +7,10 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
   return (
     <div
       id="about"
-      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8"
+      className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8 bg-white"
     >
       <div className="py-4 max-w-[85%] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-1 flex justify-center items-start pt-2 sm:pt-10 md:hidden">
+        <div className="col-span-1 flex justify-center items-start pt-2 sm:pt-10 md:hidden mb-8">
           <div className="rounded-xl shadow-lg shadow-gray-400 p-2 bg-gray-500 max-w-[350px]">
             <Image
               className="rounded-xl m-auto"
@@ -22,7 +22,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
           </div>
         </div>
         <div className="col-span-2">
-          <p className="text-4xl text-blue-800 my-4">About me</p>
+          <h2 className="text-gradient inline-block mb-2">About Me</h2>
           <p>
             Hello! I'm Hamza Al Sheikh, a Software Engineer based in Dubai, UAE,
             with a bachelor's degree in Computer Engineering from Tishreen
@@ -61,7 +61,6 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
             collaboration, technical discussion, or just exchanging ideas, feel
             free to reach out!
           </p>
-          <Skills skills={skills} />
         </div>
 
         <div className="col-span-1 md:flex justify-center items-start pt-12 hidden ">

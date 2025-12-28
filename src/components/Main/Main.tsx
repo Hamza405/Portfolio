@@ -11,7 +11,10 @@ import SocialContainer from "./SocialContainer";
 
 const Main: FC = () => {
   return (
-    <main id="main" className="w-full my-14 md:my-20 lg:my-24 text-center">
+    <main
+      id="main"
+      className="w-full py-10 md:py-16 lg:py-20 text-center bg-[#ecf0f3]"
+    >
       <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex sm:justify-center items-center flex-col">
         <PersonalIdentification />
         {/* Resume Button */}

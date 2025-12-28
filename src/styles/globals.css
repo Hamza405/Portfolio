@@ -12,10 +12,9 @@ html {
   }
 
   h1,
-  h2,
   h3,
   h4 {
-    @apply font-bold text-4xl sm:text-5xl;
+    @apply font-bold;
   }
 
   h1 {
@@ -23,7 +22,7 @@ html {
   }
 
   h2 {
-    @apply text-2xl sm:text-3xl md:text-4xl;
+    @apply font-bold text-2xl sm:text-3xl md:text-4xl;
   }
 
   li {
@@ -31,6 +30,15 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-blue-900 to-indigo-500 text-white;
+  }
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    @apply bg-gradient-to-r from-blue-900 to-indigo-500;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-900 to-indigo-500 bg-clip-text text-transparent;
   }
 }

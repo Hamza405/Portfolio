@@ -3,6 +3,7 @@ import Seo from "@/components/Seo";
 import type { AppProps } from "next/app";
 import { Fragment } from "react";
 import "../styles/globals.css";
+import Footer from "@/components/Footer/Footer";
 
 export default function NextApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,6 +11,7 @@ export default function NextApp({ Component, pageProps }: AppProps) {
       <Seo />
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </Fragment>
   );
 }

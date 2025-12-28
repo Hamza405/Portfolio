@@ -29,7 +29,7 @@ const NavBar: FC = () => {
     <div
       className={
         shadow
-          ? "sticky top-0 left-0 bg-[#ecf0f3] shadow-xl w-full h-20 z-[100]"
+          ? "sticky top-0 left-0 bg-white shadow-xl w-full h-20 z-[100]"
           : "sticky top-0 left-0 bg-[#ecf0f3] w-full h-20 z-[100]"
       }
     >
