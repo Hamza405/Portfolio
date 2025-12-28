@@ -26,7 +26,7 @@ const Home: FC<Props> = ({ skills, projects }) => {
     <div className="container">
       <Main />
       <About skills={skills} />
-      <Projects projects={projects} />
+      {/* <Projects projects={projects} /> */}
     </div>
   );
 };

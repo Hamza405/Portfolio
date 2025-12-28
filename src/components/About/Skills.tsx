@@ -11,7 +11,7 @@ const Skills: FC<{ skills: Skill[] }> = ({ skills }) => {
     .sort(({ order: a }, { order: b }) => a - b);
   return (
     <div className="w-full my-4">
-      <p className="text-4xl text-blue-800">My Skills</p>
+      <p className="text-4xl text-gradient">My Skills</p>
       <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 items-center my-4">
         {mainSkills.map((item) => (
           <SkillContainer

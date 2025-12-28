@@ -4,7 +4,8 @@ const PersonalIdentification: FC = () => {
   return (
     <>
       <h1 className="py-4 text-gray-800">
-        Hello, I'm <span className="text-indigo-600">Hamza</span>
+        {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500"> */}
+        Hello, I'm <span className="text-gradient">Hamza</span>
       </h1>
       <h2 className="py-2 text-gray-800">Software Engineer</h2>
       {/* <p className="py-4 text-gray-600 text-md max-w-[70%] mx-auto">

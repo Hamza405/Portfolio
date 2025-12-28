@@ -31,6 +31,15 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-blue-900 to-indigo-500 text-white;
+  }
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    @apply bg-gradient-to-r from-blue-900 to-indigo-500;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-900 to-indigo-500 bg-clip-text text-transparent;
   }
 }

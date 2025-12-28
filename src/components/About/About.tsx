@@ -22,7 +22,7 @@ const About: FC<{ skills: Skill[] }> = ({ skills }) => {
           </div>
         </div>
         <div className="col-span-2">
-          <p className="text-4xl text-blue-800 my-4">About me</p>
+          <p className="text-4xl text-gradient my-4">About me</p>
           <p>
             Hello! I'm Hamza Al Sheikh, a Software Engineer based in Dubai, UAE,
             with a bachelor's degree in Computer Engineering from Tishreen
