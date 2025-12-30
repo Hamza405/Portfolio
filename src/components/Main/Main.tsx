@@ -18,7 +18,7 @@ const Main: FC = () => {
       <div className=" w-full h-full p-2 mx-auto flex sm:justify-center items-center flex-col max-w-[85%]">
         <PersonalIdentification />
         {/* Resume Button */}
-        <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300 my-4">
+        {/* <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300 my-4">
           <a
             href="/assets/Hamza_AlSheikh_Resume.pdf"
             target="_blank"
@@ -27,8 +27,13 @@ const Main: FC = () => {
           >
             <button className="py-4 px-8 my-4 ">My Resume</button>
           </a>
-        </div>
-        <div className="py-4 w-full flex justify-around m-auto items-center max-w-[80%] sm:max-w-[60%]">
+        </div> */}
+        <p className="py-4 text-md w-[70%]">
+          +5 years of experience in front-end and mobile development, with
+          full-stack capabilities. Skilled in building cross-platform
+          applications
+        </p>
+        <div className="py-4 mt-4 w-full flex justify-around m-auto items-center max-w-[80%] sm:max-w-[60%]">
           <SocialContainer>
             <a
               href="https://www.linkedin.com/in/hamza-al-sheikh"
