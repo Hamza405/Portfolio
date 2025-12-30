@@ -1,9 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
-import Skills from "./Skills";
-import { Skill } from "@prisma/client";
 
-const About: FC<{ skills: Skill[] }> = ({ skills }) => {
+const About: FC = () => {
   return (
     <div
       id="about"
