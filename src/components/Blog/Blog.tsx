@@ -45,7 +45,7 @@ const BlogCard = ({
 const Blog = () => {
   return (
     <section id="blog" className="bg-white py-8">
-      <div className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-2  max-w-[85%]">
+      <div className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-2 max-w-[85%]">
         <h2 className="mb-6 text-gradient">Technical Writing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
           {blogPosts.map((post) => (

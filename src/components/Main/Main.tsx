@@ -13,9 +13,9 @@ const Main: FC = () => {
   return (
     <main
       id="main"
-      className="w-full py-10 md:py-16 lg:py-20 text-center bg-[#ecf0f3]"
+      className="w-full py-8 md:py-14 lg:py-16 text-center bg-[#ecf0f3] "
     >
-      <div className="max-w-[1240px] w-full h-full p-2 mx-auto flex sm:justify-center items-center flex-col">
+      <div className=" w-full h-full p-2 mx-auto flex sm:justify-center items-center flex-col max-w-[85%]">
         <PersonalIdentification />
         {/* Resume Button */}
         <div className="m-auto w-48 cursor-pointer hover:scale-105 md:hover:animate-bounce ease-in duration-300 my-4">
