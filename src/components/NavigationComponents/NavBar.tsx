@@ -43,18 +43,31 @@ const NavBar: FC = () => {
         </a>
         <ul className="hidden md:flex">
           <Link href="/">
-            <div className="cursor-pointer ml-5 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] hover:text-white py-2 px-4 rounded-xl hover:animate-pulse">
-              <li className="m-auto text-md lg:text-xl uppercase">Home</li>
+            <div className="cursor-pointer ml-10">
+              <li className="m-auto text-md lg:text-xl uppercase hover:text-gradient">
+                Home
+              </li>
             </div>
           </Link>
           <Link href="/#about">
-            <div className="cursor-pointer ml-5 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] hover:text-white py-2 px-4 rounded-xl hover:animate-pulse">
-              <li className="m-auto text-md lg:text-xl uppercase">About</li>
+            <div className="cursor-pointer ml-10">
+              <li className="m-auto text-md lg:text-xl uppercase hover:text-gradient">
+                About
+              </li>
             </div>
           </Link>
-          <Link href="/#projects">
-            <div className="cursor-pointer ml-5 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] hover:text-white py-2 px-4 rounded-xl hover:animate-pulse">
-              <li className="m-auto text-md lg:text-xl uppercase">Projects</li>
+          <Link href="/#skills">
+            <div className="cursor-pointer ml-10">
+              <li className="m-auto text-md lg:text-xl uppercase hover:text-gradient">
+                Skills
+              </li>
+            </div>
+          </Link>
+          <Link href="/#writing">
+            <div className="cursor-pointer ml-10">
+              <li className="m-auto text-md lg:text-xl uppercase hover:text-gradient">
+                Writing
+              </li>
             </div>
           </Link>
         </ul>

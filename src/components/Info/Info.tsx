@@ -24,7 +24,7 @@ const workData = [
 
 const Info: React.FC = () => {
   return (
-    <div className="bg-[#ecf0f3] ">
+    <div id="skills" className="bg-[#ecf0f3] ">
       <div className="flex w-full flex-wrap justify-between items-center p-4 mx-auto my-8 max-w-[85%]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="">
