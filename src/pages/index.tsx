@@ -23,11 +23,11 @@ export async function getStaticProps() {
   };
 }
 
-const Home: FC<Props> = ({ skills, projects }) => {
+const Home: FC<Props> = () => {
   return (
     <div className="">
       <Main />
-      <About skills={skills} />
+      <About />
       <Info />
       <Highlight />
       <Impact />
