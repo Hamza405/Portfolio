@@ -1,11 +1,11 @@
 import { FC } from "react";
 import Main from "../components/Main/Main";
 import About from "@/components/About/About";
-import Projects from "@/components/Projects/Projects";
 import { PrismaClient, Skill, Project } from "@prisma/client";
 import Blog from "@/components/Blog/Blog";
 import Info from "@/components/Info/Info";
-
+import Highlight from "@/components/Highlights/Highlights";
+import Impact from "@/components/Impact/Impact";
 type Props = {
   skills: Skill[];
   projects: Project[];
@@ -29,6 +29,8 @@ const Home: FC<Props> = ({ skills, projects }) => {
       <Main />
       <About skills={skills} />
       <Info />
+      <Highlight />
+      <Impact />
       <Blog />
       {/* <Projects projects={projects} /> */}
     </div>
