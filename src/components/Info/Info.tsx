@@ -43,14 +43,14 @@ const Info: React.FC = () => {
           <div className="flex flex-col md:items-center">
             <div className="flex flex-col gap-6">
               <div>
-                <h2 className=" text-gradient inline-block  mb-4">Education</h2>
+                <h2 className="text-gradient inline-block mb-4">Education</h2>
                 <h4>Tishreen University</h4>
                 <p>2017-2022</p>
                 <p> Bachelor of Computer Engineering – Latakia, Syria.</p>
                 {/* Add your education details here */}
               </div>
               <div>
-                <h2 className=" text-gradient inline-block  mb-4">Languages</h2>
+                <h2 className="text-gradient inline-block mb-4">Languages</h2>
                 <h4>Arabic</h4>
                 <p>Native Proficiency</p>
                 <h4 className="mt-2">English</h4>
