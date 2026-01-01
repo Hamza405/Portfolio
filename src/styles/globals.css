@@ -26,6 +26,14 @@ html {
     @apply font-semibold text-2xl sm:text-3xl;
   }
 
+  h3 {
+    @apply font-semibold text-xl sm:text-2xl;
+  }
+
+  h4 {
+    @apply font-semibold text-lg sm:text-xl;
+  }
+
   li {
     @apply cursor-pointer;
   }

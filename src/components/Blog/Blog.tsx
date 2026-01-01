@@ -29,7 +29,7 @@ const BlogCard = ({
   link: string;
 }) => (
   <div className="border border-gray-200 rounded-lg p-5 text-left shadow-md transition-transform duration-200 bg-[#ecf0f3] flex flex-col hover:scale-105">
-    <h3 className="text-2xl font-bold mb-2">{title}</h3>
+    <h4 className="mb-2">{title}</h4>
     <p className="text-gray-600 flex-grow mb-5">{description}</p>
     <a
       href={link}

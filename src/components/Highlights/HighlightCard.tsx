@@ -13,7 +13,7 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
 }) => {
   return (
     <div className="p-6 bg-[#ecf0f3] rounded-lg shadow-lg">
-      <h4 className="text-xl font-bold mb-2">
+      <h4 className="mb-2">
         {icon} {title}
       </h4>
       <p className="text-gray-700">{description}</p>
