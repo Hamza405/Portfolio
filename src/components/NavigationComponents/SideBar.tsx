@@ -30,10 +30,17 @@ const SideBar: FC<{ isOpen: boolean; onClose: () => void }> = ({
       },
     },
     {
-      name: "projects",
+      name: "skills",
       onClick: () => {
         onClose();
-        router.push("/#projects");
+        router.push("/#skills");
+      },
+    },
+    {
+      name: "writing",
+      onClick: () => {
+        onClose();
+        router.push("/#writing");
       },
     },
   ];
