@@ -3,20 +3,24 @@ import ImpactCard from "./ImpactCard";
 
 const impactData = [
   {
-    value: "+5",
-    label: "Years Experience in Mobile & Web Development",
+    value: "Thoughtful Architecture",
+    label:
+      "I focus on writing clean, maintainable code to build secure and scalable solutions that last.",
   },
   {
-    value: "3",
-    label: "Countries Remote Collaboration",
+    value: "Solving Complex Problems",
+    label:
+      "What drives me is tackling deep technical challenges, from native encryption to offline-first systems.",
   },
   {
-    value: "2",
-    label: "Developers Mentored",
+    value: "Growing Great Teams",
+    label:
+      "I believe great software is built by great teams, and I'm passionate about mentoring and contributing to that growth.",
   },
   {
-    value: "+4",
-    label: "Development Teams Led",
+    value: "Beyond Technology",
+    label:
+      "I work to create applications that people rely on, always keeping the end-user experience at the center of my work.",
   },
 ];
 
@@ -24,7 +28,9 @@ const Impact: React.FC = () => {
   return (
     <div className="bg-[#ecf0f3] py-8 px-4">
       <div className="max-w-[85%] mx-auto flex flex-col justify-center">
-        <h2 className="text-gradient inline-block text-center mb-8 ">Impact</h2>
+        <h2 className="text-gradient inline-block text-center mb-8 ">
+          My Approach
+        </h2>
         <div className="flex justify-center">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
             {impactData.map((item, index) => (
