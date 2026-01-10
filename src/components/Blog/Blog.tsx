@@ -17,6 +17,21 @@ const blogPosts = [
       "This guide explains how to implement ECC natively for both iOS (Swift) and Android (Kotlin) without relying on react-native-crypto.",
     link: "https://medium.com/@hamzash863/implementing-ecc-in-react-native-without-react-native-crypto-a-custom-approach-b91904251fe9",
   },
+  {
+    id: 3,
+    title:
+      "Building a Custom Reverse Geocoding Module in React Native (Swift & Kotlin)",
+    description:
+      "step-by-step guide to implementing native reverse and forward geocoding without third-party dependencies.",
+    link: "https://medium.com/@hamzash863/building-a-custom-reverse-geocoding-module-in-react-native-swift-kotlin-035f72211191",
+  },
+  {
+    id: 4,
+    title: "Architecting an Offline-First Location System in React Native",
+    description:
+      "How to architect a robust, battery-efficient system with SQLite, background processing, and intelligent data summarization.",
+    link: "https://medium.com/@hamzash863/architecting-an-offline-first-location-tracking-system-44e76d91c287",
+  },
 ];
 
 const BlogCard = ({
