@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex-1 flex flex-col items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Contact Us</h3>
+              <h3 className="text-2xl font-bold mb-2">Contact Me</h3>
               <ul className="text-gray-300">
                 <li className="flex flex-row items-center">
                   <AiFillPhone />
