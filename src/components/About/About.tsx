@@ -23,36 +23,28 @@ const About: FC = () => {
           <h2 className="text-gradient inline-block mb-2">About Me</h2>
           <p>
             Hello! I'm Hamza Al Sheikh, a Software Engineer based in Dubai, UAE,
-            with a bachelor's degree in Computer Engineering from Tishreen
-            University. My journey into software development began at age 16,
-            and what started as a passion has evolved into a fulfilling career
-            building solutions that make a real impact.
+            with a degree in Computer Engineering. What began as a passion for
+            coding at age 16 has evolved into a fulfilling career building
+            impactful solutions.
             <br />
-            Over the past +5 years, I've specialized in mobile development with
+            Over the past 5+ years, I've specialized in mobile development with
             a strong focus on React Native and cross-platform applications. For
             the last 3 years, I've expanded into full-stack development, working
             remotely with international companies across the UK, Turkey, and
-            Germany. This global experience has shaped my ability to collaborate
-            across time zones, cultures, and diverse technical environments.
+            Germany.
             <br />
-            Throughout my career, I've led challenging projects including
-            building offline-first architectures, implementing AES-256 cipher
-            encryption and key generation, developing custom native modules for
-            iOS and Android, and architecting serverless backends. Beyond
-            writing code, I'm passionate about helping others grow. I've
-            mentored junior developers through code reviews and task
-            assignments, helping them progress to mid-level roles. I believe
-            great software is built by great teams, and I enjoy contributing to
-            that growth.
+            Working across international teams has strengthened my ability to
+            collaborate across time zones and cultures. I've led challenging
+            projects from offline-first architectures and AES-256 encryption to
+            custom native modules and serverless backends. Beyond coding, I'm
+            passionate about mentoring developers and believe great software is
+            built by great teams.
             <br />
-            My technical toolkit includes JavaScript, TypeScript, React Native,
-            Redux, Node.js, Express.js, SQL, SQLite, Flutter, Dart, and AWS
-            services. I also work with Next.js, Angular, MongoDB, and have
-            experience with native iOS and Android development. But beyond the
-            technologies themselves, I focus on thoughtful architecture, writing
-            clean and maintainable code, optimizing performance, and building
-            secure, scalable solutions. What drives me is solving complex
-            problems and creating applications that people rely on.
+            My toolkit spans JavaScript, TypeScript, React, React Native,
+            Node.js, Express.js, SQL, and AWS, but I focus on thoughtful
+            architecture, clean code, and building secure, scalable solutions.
+            What drives me is solving complex problems and creating applications
+            that people truly rely on.
             <br />
             I'm always open to new opportunities and conversations about
             technology or interesting projects. Whether it's a potential
